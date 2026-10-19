@@ -8,14 +8,16 @@ let cuenta = {
 
     depositar(monto) {
         this.saldo = cuenta.saldo + monto;
+        console.log(this.saldo);
     },
 
     extraer(monto) {
-        if (monto <= saldo) {
+        if (monto <= this.saldo) {
             this.saldo = cuenta.saldo - monto;
         } else {
             console.log("Saldo insuficiente")
         }
+        console.log(this.saldo);
     },
 }
 
